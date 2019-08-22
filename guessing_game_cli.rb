@@ -1,7 +1,7 @@
 require 'pry'
 
 def run_guessing_game
-  answer = rand(1..6)
+  answer = rand(6) + 1
   guess = gets
   binding.pry
   if guess == "exit"
