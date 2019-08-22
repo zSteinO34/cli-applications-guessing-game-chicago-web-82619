@@ -1,6 +1,9 @@
+require 'pry'
+
 def run_guessing_game
   answer = rand(1..6)
   guess = gets
+  binding.pry
   if guess == "exit"
     puts "Goodbye!"
   elsif guess == answer
